@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plugins</title>
+</head>
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> <!----  CSS do PLUGIN Carrousel ----->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>EBAC Motors</h1>
+            <div class="menu_hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="#">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#">Em destaque</a>
+                    </li>
+                    <li>
+                        <a href="#">Promoções</a>
+                    </li>
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+    </header>
+    <div id="Imagens_carrosel" class="imagens">
+        <img src="./images/slide1.png" alt="Imagem de um carro, modelo Porche">
+        <img src="./images/slide2.png" alt="Carro da BMW">
+        <img src="./images/slide3.png" alt="Imagem de um carro de luxo">
+    </div>
+
+    <section id="sobre-empresa">
+        <div class="container container-flex">
+            <img src="./images/loja.jpg" alt=".jpg de uma loja de carro">
+            <div>
+                <h2>Sobre a nossa empresa</h2>
+                <p> Nossa firma é uma empresa inovadora no setor automotivo, comprometida com a excelência em design, tecnologia e sustentabilidade. Fundada com o objetivo de criar veículos que atendem às necessidades do consumidor moderno, a AutoVibe se destaca por oferecer uma gama de carros elétricos e híbridos de alta performance, com foco em eficiência energética e redução do impacto ambiental.</p>
+                <p>Com um time de engenheiros e designers altamente capacitados, a empresa combina inovação, segurança e conforto, proporcionando experiências de condução excepcionais. Além disso, a AutoVibe investe em pesquisa e desenvolvimento para trazer as tecnologias mais avançadas do mercado, incluindo sistemas de direção autônoma e conectividade inteligente.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="EmDestaque">
+        <div class="container Centralizar_Destaque_Promocao">
+            <h2>Em destaque</h2>
+            <ul class="container-flex lista-EmDestaque">
+                <li><img src="./images/carro-bmw.png" alt="Carro da BMW">
+                <h3>Carro BMW</h3>
+                <p>BMW: luxo, desempenho e tecnologia avançada.</p>
+                <div class="preco">
+                    <strong>R$ 100.000,00</strong>
+                </div>
+                <button>Quero!</button>
+            </li>
+            <li class="item_centro"><img src="./images/fusca.png" alt="Carro do modelo fusca">
+                <h3>Fusca</h3>
+                <p>Fusca: clássico, robusto e icônico carro alemão.</p>
+                <div class="preco">
+                    <strong>R$ 15.000,00</strong> 
+                </div>
+                <button>Quero!</button>
+            </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section id="promocao">
+        <div class="container Centralizar_Destaque_Promocao">
+            <h2>Promoções</h2>
+            <ul class="promocao_ container-flex lista-EmDestaque ">
+                <li><img src="./images/carro-bmw.png" alt="Carro da BMW">
+                <h3>Carro BMW</h3>
+                <p>BMW: luxo, desempenho e tecnologia avançada.</p>
+                <div class="preco">
+                    <del>R$ 100.000,00</del>
+                    <strong>                       
+                        R$ 70.000,00
+                    </strong>
+                </div>
+                <button>Quero!</button>
+            </li>
+            <li class="item_centro"><img src="./images/fusca.png" alt="Carro do modelo fusca">
+                <h3>Fusca</h3>
+                <p>Fusca: clássico, robusto e icônico carro alemão.</p>
+                <div class="preco">
+                    <del>R$ 15.000,00</del>
+                    <strong>
+                        R$ 10.000,00
+                    </strong> 
+                </div>
+                <button>Quero!</button>
+            </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="Contato">
+        <div class="container centralizar">
+            <div class="campo_form">
+                    <h2>CONTATO</h2>
+                </div>
+                <form>
+                    <div class="campo_form">
+                        <label id="campo_nome">NOME<span id="obrigatorio">(Obrigatório)</span></label>
+                        <input id="id_nome" placeholder="Nome" type="text" name="nome">
+                    </div>
+                    <div class="campo_form">
+                        <label>TELEFONE <span id="obrigatorio">(Obrigatório)</span></label>
+                        <input id="camp_tel" placeholder="Telefone" type="text" name="telefone">
+                    </div>
+                    <div class="campo_form">
+                        <label>EMAIL <span id="obrigatorio">(Obrigatório)</span></label>
+                        <input id="id_email" placeholder="Email" type="email" name="email">
+                    </div>
+                    <div class="text_and_button">
+                        <div class="campo_form ">
+                            <label for="">MENSAGEM</label>
+                            <textarea placeholder="Duvida ou veículo de interesse" id="mensagem"></textarea>
+                        </div>
+                        <div class="campo_form">
+                           <button id="botao_formulario" type="submit">Enviar</button>
+                        </div>
+                </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="p_footer">
+                <p>2025&copy; EBAC Motors - Todos os direitos reservados</p>
+            </div>
+            <ul id="RedesSocias_ul">
+                <li><a href="#"><img src="./icones/youtube.png" alt=""></a></li>
+                <li><a href="#"><img src="./icones/instagram.png" alt=""></a></li>
+                <li><a href="#"><img src="./icones/facebook.png" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> <!-- Carregue o jQuery primeiro -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> <!-- SLICK -->
+    <script src="./mask_JS_plugins/jquery.mask.min.js"></script> <!-- Máscaras -->
+    <script src="./mask_JS_plugins/jquery.validate.min.js"></script> <!-- Validação -->
+    <script src="./mask_JS_plugins/messages_pt_BR.min.js"></script> <!-- Tradução para português -->
+    <script src="./main.js"></script> <!-- Seu script personalizado -->
+    
+</body>
+
+</html>
