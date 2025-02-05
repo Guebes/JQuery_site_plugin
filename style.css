@@ -541,28 +541,48 @@ footer p{
 
 /*---------------------!!CELULAR!!---------------------*/
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 413px) {
     
-    .container{
-
-        width: 500px;
-        overflow-x: hidden;
+    * {
+        box-sizing: border-box;
     }
 
-    #lista_header{
+    body, html {
+        overflow-x: hidden; /* Impede rolagem horizontal global */
+    }
+    
+    header {
+        
+        position: sticky; /*O elemento ficara fixo no topo*/
+        top: 0;
+        left: 0;
+        z-index: 1; /*O header fica em cima de outros elementos*/
+    }
 
-        max-width: 90%;
+    .container {
+        width: 100%; /* Usar 100% para que a largura seja sempre ajustada à tela */
+        max-width: 100%;
+        overflow-x: hidden; /* Para evitar rolagem horizontal */
+    }    
+
+    #lista_header {
+
+        max-width: 100%;
         display: flex;
         margin: 0;
+        padding: 0;
+        flex-wrap: wrap; /* Garante que os itens não ultrapassem a largura */
     }
+    
 
     #lista_header li{
 
-        font-size: 16px;
-        margin-left: -13px;
-        margin-right: 30px;
-        max-width: 33%;
-        height: 25px;
+        width: 73px;
+        height: 18px;
+        max-width: 100%;
+        font-size: 10px;
+        margin-left: 0;
+        margin-right: 20px;
         padding: 2px 2px;
         margin-bottom: 0;
         border: 1px solid;
@@ -571,31 +591,39 @@ footer p{
     }
 
     #sobre-empresa {
-        margin-left: 20px; /* Ajuste de margem */
-        margin-top: 20px;
+
+        margin-top: 17px;
         max-width: 90%;
+        margin-left: 20px; /* Ajuste de margem */
     }
 
-    #sobre-empresa img {
-
-        max-width: 360px;
-        height: auto; /* Ajuste para manter a proporção */
-        margin-top: 10px;
-        margin-bottom: 20px;
-        margin-left: -20px;
-    }
-
-     #sobre-empresa p{
-
-        max-width: 79%;
-        margin-left: -20px;
-        font-size: 17px;
-        padding: 17px auto;
-        width: auto;
-        height: auto; /* Ajuste para manter a proporção */
+    #sobre-empresa h2{
         
+        margin-top: -60px;
+        margin-left: -20px;
+        margin-bottom: 0;
     }
+    
+    #sobre-empresa img {
+        
+        margin-top: 0px;
+        max-width: 100%; /* Isso vai garantir que a imagem não ultrapasse a tela */
+        height: auto; /* Para manter a proporção */
+    }
+    
+    #sobre-empresa p{
 
+    margin-top: 10px;
+    max-width: 100%;
+    margin-left: -20px;
+    font-size: 17px;
+    padding: 17px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    width: auto;
+    height: auto; /* Ajuste para manter a proporção */
+}
+    
+    
     .container-flex {
         display: flex;
         flex-wrap: wrap; /* Permite que os itens que não cabem na linha se movam para a próxima linha */
@@ -604,36 +632,41 @@ footer p{
 
     #EmDestaque{
 
-        width: 100%;
+        max-width: 100%;    
+    }
+
+    .lista-EmDestaque {
+        
+        display: block;
+        flex-wrap: wrap;  /* Permite que os itens que não cabem na linha se movam para a próxima linha */
+        width: 100%; /* Garante que a lista ocupe toda a largura */
+        margin: 0;  /* Evita qualquer margem extra */
+        padding: 0; /* Evita qualquer padding extra */
     }
 
     .lista-EmDestaque li {
-        width: 500px; /* Ajusta a largura dos itens para cerca de 48%, deixando um pequeno espaço entre eles */
-        max-width: 100%;
+        width: 100%; /* Garante que os itens ocupem 100% da largura */
+        margin-bottom: 10px; /* Espaçamento entre os itens */
+        font-size: 16px; /* Tamanho da fonte para os itens */
     }
+
+    
+    .lista-EmDestaque li img {
+        max-width: 300px; /* Ajuste do tamanho máximo da imagem dentro do item */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+}
 
     .lista-EmDestaque p{
 
-        width: 100%;
-    }
-
-    /* Ajustes para os botões na seção de destaque */
-    .lista-EmDestaque li button {
-        width: 60%; /* Garantir que o botão ocupe 100% da largura do item */
-        padding: 4px 0;
-        margin-bottom: 17px;
-    }
-
-    .lista-EmDestaque{
-
-        margin-bottom: 60px;
+        width: 300px;
     }
 
     /*------------FOOTER----------------*/
 
     .p_footer{
 
-        max-width: 100%;
+        width: 413px;
         margin-left: -20px;
     }
 
@@ -645,13 +678,15 @@ footer p{
     }
 
     ul#RedesSocias_ul {
-        padding-left: 0;
+        
+        width: 413px;
+        padding: 14px 10px;
         padding-bottom: 7px;
-        max-width: 100%;
-        margin-left: -20px;
-        justify-content: center; /* Alinha as redes sociais no centro */
+        margin: 0 -20px;
+        justify-content: center;
         display: flex;
     }
+    
 
     ul#RedesSocias_ul img {
         max-width: 33%; /* Ajusta o tamanho das imagens dentro do footer */
@@ -678,18 +713,16 @@ footer p{
         margin-top: 140px;
         margin-left: auto;
         margin-right: auto;
-        width: 100%;
+        max-width: 100%;
     }
     
     .tres_primeiros input{
 
-        width: 500px;
-        max-width: 100%;
+        width: 100%;
     }
 
     .campo_form_text_button{
 
-        width: 500px;
         display: block;
     }
 
@@ -711,4 +744,4 @@ footer p{
         margin-bottom: 17px;
         padding: 3px;
     }
-}
+
