@@ -6,7 +6,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body{
+body, html{
 
     overflow-x: hidden;
 }
@@ -78,7 +78,6 @@ header{
     text-align: center;
 }
 
-
 .menu_hamburguer{
 
     margin-top: 10px;
@@ -86,6 +85,7 @@ header{
     width: 30px;
     cursor: pointer;
 }
+
 /*O pseudo-classe :nth-child() é usada para selecionar um elemento com base na sua posição dentro de um contêiner, de acordo com a ordem dos filhos.*/
 
 .menu_hamburguer span{
@@ -95,7 +95,7 @@ header{
     width: 100%;
     background-color: white;
     display: block;
-    margin-left: 800px;
+    margin-left: 600px;
     margin-bottom: 5px;
     transition: all 0.3s ease;
 }
@@ -211,7 +211,7 @@ display: none;
 
     margin-top: 10px;
     margin-bottom: 0;
-    width: 40%;
+    width: 90%;
     resize: none;
     padding: 6px;
     outline: none;
@@ -229,6 +229,7 @@ display: none;
 .campo_form textarea{
 
     padding-bottom: 18px;
+    width: 100%;
 }
 
 
@@ -265,12 +266,19 @@ section#Contato{
 
 /*Trabalhando com outra classe PAI*/
 
-.text_and_button{
+.campo_form_text_button{
     
     display: flex;
 }
 
-.text_and_button button{
+.campo_form_text_button textarea{
+
+    resize: none;
+    width: 800px;
+    margin-top: 10px;
+}
+
+.campo_form_text_button button{
     
     margin-left: 10px;
     outline: none;
@@ -280,22 +288,13 @@ section#Contato{
     background-color: rgb(3, 170, 3);
     transition: all 0.3s ease;
     font-size: 14px;
-    margin-top: 50px;
+    margin-top: 62px;
     margin-bottom: 29px;
 }
 
 .text_and_button button:hover{
     
     background-color: green;
-}
-
-.text_and_button textarea{
-    
-    width: 740px;
-    resize: none;
-    outline: none;
-    margin-top: 10px;
-    margin-bottom: 29px;
 }
 
 #obrigatorio{
@@ -309,7 +308,7 @@ footer p{
     
     margin-top: 0;
     width: 100%;
-    padding: 10px 700px;
+    padding: 10px 600px;
 }
 
 .p_footer{
@@ -331,212 +330,14 @@ ul#RedesSocias_ul{
     display: flex;
     background-color: rgb(131, 4, 4);
     margin-left: -19px;
-    padding-left: 770px;
     width: 2000px;
     margin-bottom: 1px;
-    padding-bottom: 5px;
+    padding: 10px 700px;
 } 
 
 ul#RedesSocias_ul img{
 
     width: 50%;
-}
-
-@media screen and (min-width:1500px){
-
-
-    .container {
-
-        width: 100%;
-        margin: 0 auto;
-        padding: 0 20px;
-    }
-
-    .menu_hamburguer span{
-
-    height: 4px;
-    width: 100%;
-    background-color: white;
-    display: block;
-    margin-left: 600px;
-    margin-bottom: 5px;
-    transition: all 0.3s ease;
-    }
-
-    .lista-EmDestaque li{
-
-        width: 40%;
-    }
-
-    .EmDestaque {
-
-        margin: 30px;
-    }
-
-
-    /*Trabalhando com outra classe PAI*/
-
-.text_and_button button{
-
-    margin-left: 10px;
-    margin-top: 60px;
-    outline: none;
-    padding: 9px;
-    color: white;
-    cursor: pointer;
-    background-color: rgb(3, 170, 3);
-    transition: all 0.3s ease;
-    font-size: 14px;
-}
-
-.text_and_button button:hover{
-
-    background-color: green;
-}
-
-.text_and_button textarea{
-
-    width: 590px;
-    resize: none;
-    outline: none;
-}
-
-.text_and_button textarea{
-
-    margin-top: 10px;
-}
-
-.centralizar{
-
-    margin-top: 140px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
-
-#sobre-empresa{
-
-    margin-top: 50px;
-    width: 100%;
-    margin-left: 200px;
-}
-
-.Centralizar_Destaque_Promocao{
-
-    width: 100%;
-    margin-left: 200px;
-}
-
-/*FOOTER*/
-
-ul#RedesSocias_ul{
-
-    display: flex;
-    background-color: rgb(131, 4, 4);
-    padding-left: 650px;
-    width: 2000px;
-    margin-bottom: 1px;
-    padding-bottom: 5px;
-}   
-
-ul#RedesSocias_ul img{
-
-    width: 50%;
-}
-
-footer p{
-    
-    margin-top: 0;
-    width: 100%;
-    padding: 10px 550px;
-}
-
-.p_footer{
-
-    color: white;
-    background-color: rgb(131, 4, 4);
-    width: 2000px;
-    margin-left: -19px;
-    
-}
-
-}
-
-@media screen and (max-width:1500px){
-
-    
-
-    .menu_hamburguer span{
-
-        height: 4px;
-        width: 100%;
-        background-color: white;
-        display: block;
-        margin-left: 500px;
-        margin-bottom: 5px;
-        transition: all 0.3s ease;
-        }
-
-        #sobre-empresa{
-
-            margin-top: 50px;
-            width: 100%;
-            margin-left: 170px;
-        }
-        
-        #sobre-empresa img{
-        
-            max-width: 30%;
-            margin-right: 10px;
-            margin-top: 5px;
-            margin-bottom: 90px;
-        }
-        
-        #sobre-empresa p{
-        
-            width: 70%;
-        }
-
-        ul#RedesSocias_ul{
-
-            display: flex;
-            background-color: rgb(131, 4, 4);
-            padding-left: 550px;
-            width: 2000px;
-            margin-bottom: 1px;
-            padding-bottom: 5px;
-        }   
-        
-        ul#RedesSocias_ul img{
-        
-            width: 50%;
-        }
-        
-        footer p{
-            
-            margin-top: 0;
-            width: 100%;
-            padding: 10px 450px;
-        }
-        
-        .p_footer{
-        
-            color: white;
-            background-color: rgb(131, 4, 4);
-            width: 2000px;
-            margin-left: -19px;
-            
-        }
-
-        .text_and_button textarea{
-    
-            width: 498px;
-            resize: none;
-            outline: none;
-        }
-
-     
-
 }
 
 /*---------------------!!CELULAR!!---------------------*/
@@ -655,7 +456,6 @@ footer p{
         max-width: 300px; /* Ajuste do tamanho máximo da imagem dentro do item */
         height: auto; /* Mantém a proporção da imagem */
     }
-}
 
     .lista-EmDestaque p{
 
@@ -744,4 +544,4 @@ footer p{
         margin-bottom: 17px;
         padding: 3px;
     }
-
+}
