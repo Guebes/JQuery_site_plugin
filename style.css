@@ -342,7 +342,7 @@ ul#RedesSocias_ul img{
     width: 50%;
 }
 
-@media (max-width:1600px){
+@media screen and (min-width:1500px){
 
 
     .container {
@@ -462,7 +462,7 @@ footer p{
 
 }
 
-@media (max-width:1500px){
+@media screen and (max-width:1500px){
 
     
 
@@ -541,32 +541,59 @@ footer p{
 
 /*---------------------!!CELULAR!!---------------------*/
 
-@media (max-width: 425px) {
+@media screen and (max-width: 500px) {
     
+    .container{
+
+        width: 500px;
+        overflow-x: hidden;
+    }
+
+    #lista_header{
+
+        max-width: 90%;
+        display: flex;
+        margin: 0;
+    }
+
+    #lista_header li{
+
+        font-size: 16px;
+        margin-left: -13px;
+        margin-right: 30px;
+        max-width: 33%;
+        height: 25px;
+        padding: 2px 2px;
+        margin-bottom: 0;
+        border: 1px solid;
+        border-radius: 5px;
+        background-color: transparent;
+    }
+
     #sobre-empresa {
         margin-left: 20px; /* Ajuste de margem */
         margin-top: 20px;
+        max-width: 90%;
     }
 
     #sobre-empresa img {
 
-        max-width: 460px; /* Ajusta a largura da imagem */
+        max-width: 360px;
         height: auto; /* Ajuste para manter a proporção */
         margin-top: 10px;
         margin-bottom: 20px;
         margin-left: -20px;
     }
 
-    #sobre-empresa h2 {
-        font-size: 20px; /* Ajusta o tamanho da fonte para o título */
-        margin-bottom: 10px;
-    }
+     #sobre-empresa p{
 
-    #sobre-empresa p {
-        width: 90%;
-        font-size: 14px; /* Reduz o tamanho da fonte do parágrafo */
-        line-height: 1.4; /* Ajusta o espaçamento entre as linhas */
-        text-align: justify; /* Justifica o texto */
+        max-width: 79%;
+        margin-left: -20px;
+        font-size: 17px;
+        padding: 17px auto;
+        width: auto;
+        height: auto; /* Ajuste para manter a proporção */
+        
     }
 
     .container-flex {
@@ -575,14 +602,26 @@ footer p{
         justify-content: space-between; /* Garante que os itens fiquem distribuídos */
     }
 
+    #EmDestaque{
+
+        width: 100%;
+    }
+
     .lista-EmDestaque li {
-        width: 48%; /* Ajusta a largura dos itens para cerca de 48%, deixando um pequeno espaço entre eles */
+        width: 500px; /* Ajusta a largura dos itens para cerca de 48%, deixando um pequeno espaço entre eles */
+        max-width: 100%;
+    }
+
+    .lista-EmDestaque p{
+
+        width: 100%;
     }
 
     /* Ajustes para os botões na seção de destaque */
     .lista-EmDestaque li button {
-        width: 100%; /* Garantir que o botão ocupe 100% da largura do item */
+        width: 60%; /* Garantir que o botão ocupe 100% da largura do item */
         padding: 4px 0;
+        margin-bottom: 17px;
     }
 
     .lista-EmDestaque{
@@ -590,38 +629,32 @@ footer p{
         margin-bottom: 60px;
     }
 
-    .text_and_button textarea {
-        width: 100%; /* Ajustar para 100% da largura disponível */
-    }
+    /*------------FOOTER----------------*/
 
-    .text_and_button button {
-        width: 100%; /* Ajustar para 100% da largura disponível */
-        padding: 9px 0;
+    .p_footer{
+
+        max-width: 100%;
+        margin-left: -20px;
     }
 
     footer p{
     
         margin-top: 0;
-        width: 100%;
-        padding: 10px 10px;
-    }
-
-    .p_footer {
-        width: 495px;
-        margin-left: -20px;
+        max-width: 100%;
+        padding: 14px 10px;
     }
 
     ul#RedesSocias_ul {
         padding-left: 0;
-        width: 495px;
+        padding-bottom: 7px;
+        max-width: 100%;
         margin-left: -20px;
         justify-content: center; /* Alinha as redes sociais no centro */
         display: flex;
-        
     }
 
     ul#RedesSocias_ul img {
-        width: 50%; /* Ajusta o tamanho das imagens dentro do footer */
+        max-width: 33%; /* Ajusta o tamanho das imagens dentro do footer */
     }
 
     .Centralizar_Destaque_Promocao {
@@ -630,9 +663,14 @@ footer p{
         margin-top: 40px;
     }
 
+    #Imagens_carrosel{
+
+        max-width: 100%;
+    }
+
     .menu_hamburguer span{
 
-        margin-left: 90px;
+        margin-left: 70px;
     }
 
     .centralizar{
@@ -642,10 +680,35 @@ footer p{
         margin-right: auto;
         width: 100%;
     }
+    
+    .tres_primeiros input{
 
-    .campo_form textarea{
-
-        width: 180px;
+        width: 500px;
+        max-width: 100%;
     }
 
+    .campo_form_text_button{
+
+        width: 500px;
+        display: block;
+    }
+
+    .campo_form_text_button textarea{
+
+        max-width: 70%;
+        margin-top: 10px;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .campo_form_text_button button{
+
+        max-width: 50%;
+        margin-top: 2px;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 17px;
+        padding: 3px;
+    }
 }
